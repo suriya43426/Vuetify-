@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EASY DONATE</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+</head>
+    <body>
+    <div id="vue-app">
+    <h2>1.เลือกโครงการ</h2>
+    <input type="checkbox" value="โครงการหนึ่ง" v-model="Project">
+    <label>โครงการหนึ่ง</label>
+    <span>ต้องการบริจาค</span> 
+    <input type="number" v-model="Donate">บาท
+    <br>
+    
+    <input type="checkbox" value="โครงการสอง" v-model="Project">
+    <label>โครงการสอง</label>
+    <span>ต้องการบริจาค</span> 
+    <input type="number" v-model="Donate">บาท
+    <br>
+    <input type="checkbox" value="โครงการสาม" v-model="Project">
+    <label>โครงการสาม</label>
+    <span>ต้องการบริจาค</span> 
+    <input type="number" v-model="Donate">บาท
+    <br>
+    <input type="checkbox" value="โครงการสี่" v-model="Project">
+    <label>โครงการสี่</label>
+    <span>ต้องการบริจาค</span> 
+    <input type="number" v-model="Donate">บาท
+    <br>
+    
+    <hr>
+    <h2>2.เลือกวิธีการชำระเงิน</h2>
+    <input type="radio" value="Credit/Debit" v-model="Payment">
+    <label>ชำระผ่านบัตร Credit/Debit</label>
+    <br>
+    <br>
+    <input type="radio" value="line pay" v-model="Payment">
+    <label>ชำระผ่าน Rabbit line pay</label>
+    <br>
+    <br>
+    <input type="radio" value="prompay" v-model="Payment">
+    <label>ชำระผ่าน พร้อมเพย์</label>
+    <hr>
+    <h2>3. สรุป</h2>
+    <h3>โครงการที่่เลือก : {{Project}}</h3>
+    <h3>ยอดเงินรวม : {{Donate}}</h3>
+    <h3>ช่องทางชำระ :{{Payment}}</h3>
+    </div>
+    <script src="app.js" ></script>
+    </body>
+</html>
